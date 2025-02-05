@@ -18,9 +18,9 @@ This project includes a scraper that extracts event information from an HTML fil
 ### 1. Clone the repository
 Clone the repository to your local machine:
 
-```bash
-git clone <repository-url>
-cd <repository-folder>
+    ```bash
+    git clone <repository-url>
+    cd <repository-folder>
 
 ### 2. Install Dependencies
 
@@ -64,9 +64,3 @@ To start the Next.js application and display the events:
 pnpm dev
 
 Visit http://localhost:3000 to view all the events.
-
-
-
-
-
-
