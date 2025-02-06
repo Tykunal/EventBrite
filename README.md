@@ -48,7 +48,7 @@ MONGO_URI=your-mongodb-uri-here
 Create an `.env.local` file inside the **root** folder with:
 
 ```ini
-NEXT_PUBLIC_MONGO_URI=your-mongodb-uri-here
+MONGO_URI=your-mongodb-uri-here
 ```
 
 ### 4. Run the Scraper
