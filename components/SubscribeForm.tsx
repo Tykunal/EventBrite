@@ -43,6 +43,7 @@ export default function SubscribeForm({ eventId }: SubscribeFormProps) {
       form.reset();
       router.push(data.link);
     } catch (error) {
+      console.error("Subscription Error:", error);
       setMessage("Something went wrong. Please try again.");
     }
   };
@@ -59,7 +60,7 @@ export default function SubscribeForm({ eventId }: SubscribeFormProps) {
               <FormControl>
                 <Input type="email" placeholder="you@example.com" {...field} />
               </FormControl>
-              <FormDescription>We'll notify you when the event starts.</FormDescription>
+              <FormDescription>We&apos;ll notify you when the event starts.</FormDescription>
               <FormMessage />
             </FormItem>
           )}

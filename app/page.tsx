@@ -13,7 +13,7 @@ interface Event {
 
 export default function Home() {
   const [events, setEvents] = useState<Event[]>([]);
-  const [subscribedEvents, setSubscribedEvents] = useState<string[]>([]);
+  // const [subscribedEvents, setSubscribedEvents] = useState<string[]>([]);
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -26,12 +26,12 @@ export default function Home() {
   }, []);
 
 
-  const handleSubscription = (eventId: string) => {
-    setSubscribedEvents((prev) => [...prev, eventId]);
-  };
+  // const handleSubscription = (eventId: string) => {
+  //   setSubscribedEvents((prev) => [...prev, eventId]);
+  // };
 
   const handleViewDetails = (event: Event) => {
-    if (!subscribedEvents.includes(event._id)) {
+    if (true) { //here we may add the logic for subscribed user, if he/she has registered for that event, they may see the event directly.
       alert("Please subscribe with your email first to view details.");
     } else {
       window.open(event.link, "_blank");
